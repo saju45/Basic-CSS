@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Learing CSS</title>
+
+   <!-- <link rel="stylesheet" href="style.css">--> 
+
+ <!-- <!class and id in css>
+   <style type="text/css">
+  
+
+    
+  .heading-style{
+    color: red;
+    font-size: 10px;
+    
+  }
+  .center1{
+    text-align :center;
+  }
+
+  #para-style{
+    color: red;
+  }
+  #section1{
+    background-color: green;
+  }
+
+  #section1 h1{
+    color: red;
+  }
+
+  #section1 p{
+    color: pink;
+  }
+   </style> -->
+  
+<!-- <!Universal selector>
+   <style type="text/css">
+    
+    *{
+        background-color: green;
+        color: white;
+    }
+
+   </style> -->
+
+ <!-- <!selector and selectorGroup>
+   <style>
+
+    h1,p{
+        background-color: red;
+        color: white;
+    }
+/* 
+    p{
+        background-color: green;
+        color: white;
+    } */
+
+
+   </style> -->
+
+<!-- <!combinators or desendent selector>
+
+   <style>
+
+    div p{
+        color: green;
+    }
+    
+   </style> -->
+
+<!-- <!child selector>
+
+<style>
+
+    div > p{
+        color: green;
+    }
+</style> -->
+
+<!-- <!addjation selector>
+<style>
+
+    div + p{
+        color: green;
+    }
+
+</style> -->
+
+<!-- <! general sublink selector>
+<style>
+
+    div ~ p{
+        color: green;
+    }
+
+</style> -->
+
+<!-- <!font style in css>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+
+<style>
+
+.my-style{
+    font-size: 151%;
+    font-family: 'Roboto', sans-serif;    
+    font-style: italic;
+    font-weight: bold;
+    color: brown;
+}
+
+</style> -->
+
+<!-- <!hexadecimal colorCode>
+<style>
+    
+    body{
+        background-color: #DADCE0;
+    }
+    h1{
+        color:#2E5CA7;
+    }
+
+</style> -->
+
+<!-- <!text style in webpage>
+
+<style>
+
+    .align{
+        text-align: justify;
+    }
+    .decoration{
+
+        text-decoration: line-through;
+    }
+    .indent{
+        text-indent: 50px;
+    }
+
+    .transform{
+
+        text-transform: lowercase;
+    }
+    .shoadow{
+
+        text-shadow: 5px 3px gray;
+    }
+
+    .wordSpacing{
+        word-spacing: -5px;
+    }
+
+</style> -->
+
+<!-- <! Emoji style in html>
+
+<style>
+
+    span{
+        
+        color: black;
+        font-size: 2rem;
+    }
+
+</style> -->
+
+<!-- <!margin in css>
+<style>
+
+    #section1{
+        margin-top: 50px;
+        margin-left: 100px;
+        margin-bottom: 200px;
+        width: 200px;
+        background-color: green;
+    }
+
+    #section2{
+        width: 200px;
+        background-color: yellow;
+    }
+</style> -->
+
+<!-- <!padding in css>
+<style>
+
+    body{
+        margin: 20;
+        padding: 0;
+    }
+    #section1{
+        padding: 20px;
+        width: 200px;
+        background-color: green;
+    }
+
+    #section2{
+        padding: 20px;
+        width: 200px;
+        background-color: yellow;
+    }
+</style> -->
+
+<!-- <!border in css>
+<style>
+
+    h1{
+        text-align: center;
+        border-left: 5px green solid;
+        border-top: 5px red solid;
+        border-right: yellow 5px solid;
+        border-bottom: 5px black solid;
+        width: 200px;
+    }
+    h2{
+        text-align: center;
+        border: 30px black solid;
+        width: 200px;
+        border-radius: 10px;
+    }
+    h3{
+        text-align: center;
+        border: 7px red dotted;
+        width: 200px;
+    }
+</style> -->
+
+<!-- <!box model>
+<style>
+    body{
+        background-color: gray;
+    }
+    h1{
+        background-color: green;
+    }
+    p{
+        margin-left: 15px;
+        background-color: pink;
+    }
+    .container{
+        background-color: brown;
+        width: 300px;
+        padding: 5px;
+        border: 5px black solid;
+        margin: 5px;
+    }
+
+</style> -->
+
+<!-- <! block element>
+<style>
+
+h1{
+    background-color: green;
+    display: inline;
+}
+</style> -->
+
+<!-- <!inline element>
+<style>
+    span{
+
+        background-color: gray;
+        display: block;
+    }
+</style> -->
+
+<!-- <!max-width>
+<style>
+
+.e1{
+    width: 600px;
+    margin: auto;
+    border: 3px green solid;
+}
+
+
+.e2{
+    max-width: 600px;
+    margin: auto;
+    border: 3px green solid;
+}
+
+</style> -->
+
+
+<!-- <!Psedua class>
+<style>
+
+a:hover{
+    color: green;
+}
+
+.my-link:hover{
+    color: yellow;
+}
+</style> -->
+
+
+<!-- <!Psedua  focus>
+
+<style>
+
+    input{
+        padding: 10px;
+        width: 150px;
+    }
+
+    input:focus{
+        background-color: blanchedalmond;
+    }
+
+    table,td,th{
+        text-align: center;
+        border: 1px green solid;
+    }
+    tr:nth-child(odd){
+
+        background-color: yellow;
+    }
+
+</style> -->
+
+<!-- <!Psedua element>
+
+<style>
+
+
+/* p:hover{
+    
+    color: yellow;
+} */
+
+P::first-line{
+    color: green;
+    font-size: 3.5rem;
+}
+
+P::after{
+    content: ">";
+}
+
+P::before{
+    content: "💟";
+}
+
+</style> -->
+
+<!-- <!Psedua class more..>
+
+<style>
+
+    /* .demo{
+    
+        background-color: black;
+        color: white;
+    } */
+
+    .demo p:first-child{
+        background-color: yellow;
+        color: gray;
+    }
+
+    .demo P:last-child{
+        background-color: blanchedalmond;
+        color: black;
+    }
+    .demo p:nth-child(2){
+        background-color: yellow;
+        color: red;
+    }
+
+    li:nth-child(3n+1){
+        background-color: black;
+        color: white;
+        display: inline;
+    }
+
+</style> -->
+
+<!-- <! Psedua more element>
+<style>
+
+/* .first-letter-style{
+
+    color: pink;
+    font-size: 3rem;
+} */
+
+p::first-letter{
+
+    color: yellow;
+    font-size: 3rem;
+}
+
+.demo::before , .demo::after{
+    content: '';
+    width: 100%;
+    height: 20px;
+    background: black;
+    display: inline-block;
+}
+
+</style> -->
+
+
+<!-- <!Specifity calculation>
+<style>
+
+    /* id=0 class=0 element=0 ==0 */
+
+        /* id=0 class=0 element=1 ==001 */
+    h1{
+        background-color: black;
+    }
+
+   /* id=0 class=1 element=0 ==010 */
+    .backgroud{
+
+        background-color: yellow;
+    }
+
+    /* id=0 class=1 element=1 ==011 */
+    h1.backgroud{
+    background-color: green;
+    }
+
+    /* id=1 class=0 element=0 ==100 */
+    #background{
+        
+        background-color: red;
+    }
+</style> -->
+
+<link rel="stylesheet" href="style.css">
+
+<!-- <!gradient in css>
+<style>
+
+.gradient-style{
+    height: 400px;
+    width: 100%;
+    background-image: linear-gradient(red green);
+}
+#grad {
+    height: 400px;
+    width: 100%;
+  background-image: linear-gradient(red, yellow);
+}
+
+</style> -->
+
+
+<!-- <!Navigation menu design>
+
+<style>
+
+    #nav-menu{
+
+        width: 500px;
+        height: 80px;
+        background-color: gray;
+        margin: 0 auto;
+        
+
+    }
+    #nav-menu ul{
+
+    }
+
+    #nav-menu ul li{
+
+        list-style-type: none;
+        margin: 20px;
+        float: left;
+    }
+
+    #nav-menu ul li a{
+
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        cursor: pointer;
+    }
+
+    #nav-menu ul li:hover{
+        text-decoration: underline;
+}
+
+
+</style> -->
+
+<!-- <!box sizing>
+
+<style>
+
+
+.div1{
+    width: 50%;
+    height: 300px;
+    background-color: brown;
+    padding: 10px;
+    border: 5px solid gray;
+    box-sizing: border-box;
+    float: left;
+}
+
+.div2{
+    width: 50%;
+    height: 300px;
+    background-color: green;
+    float: left;
+}
+
+</style> -->
+
+<!-- <!Opacity>
+<style>
+    img{
+        width: 200px;
+        height: 200px;
+        opacity: 0.5;
+    }
+
+    img:hover{
+        opacity: 1;
+    }
+
+</style> -->
+
+</head>
+<body>
+    
+    <!-- <!class and id in css>
+    <p class="heading-style  center1" >I am form Bangladesh</p>
+    <h1>I am form Bangladesh</h1>
+
+    <p id="para-style">Common in fiction and certain styles of journalistic or other nonfiction writing, a descriptive paragraph contains various details of the same thing, with each sentence adding new insight. A paragraph in a horror novel might describe how it feels walking around the woods alone; a love letter’s paragraph might focus on the details of your significant other’s eyes. No matter the context, descriptive paragraphs are meant to provide the clearest picture of your subject.</p>
+
+    <p  >
+        For editorials and opinion pieces, persuasive paragraphs are meant to convince the reader of a specific point, with each sentence presenting evidence or reasoning to support that point. Like expository paragraphs, persuasive paragraphs may contain data and statistics, but here, these work to support an opinion rather than verify a fact. The trick to writing persuasive paragraphs is knowing how to assert your opinion without sounding preachy.  
+    </p>
+
+    <div id="section1">
+        <h1>this is header text</h1>
+        <p>this is paragraph tag</p>
+
+    </div> -->
+
+<!-- <h1>this is heading tag 1</h1> -->
+
+    <!-- <div id="section1" >
+        <h1 class="decoration" >Bangladesh</h1>
+        <p class="wordSpacing">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like</p>
+
+    </div>
+
+    <div id="section2">
+
+        <h1 class="shoadow">Bangladesh</h1>
+        <p> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+    </div> --> 
+
+    <!-- <!emoji styling>
+    <p> I <span>🤍</span>  Bangladesh</p> -->
+
+<!-- <!margin and paddin>
+    <div id="section1">
+
+        <h1>Bangladesh</h1>
+    </div>
+
+    <div id="section2">
+        <h1>Qatar</h1>
+    </div> -->
+
+<!-- <!border style>
+   <h1>
+    Bangladesh
+   </h1>
+   <h2>Bangladesh</h2>
+   <h3>Bangladesh</h3> -->
+
+   <!-- <!box model>
+   <h1>This is Bangladesh</h1>
+
+   <p>This is a paragraph</p>
+
+   <div class="container">
+    This is Div
+   </div>
+
+   <p>this is para</p> -->
+
+<!-- <!block and inline element>
+   <h1>
+    This is Heading 1
+   </h1>
+   <h2>This is Headin 2</h2>
+   <div>
+    <span>This is a span</span>
+   </div> -->
+
+   <!-- <!max-width>
+   <p class="e1">
+    A paragraph is a series of related sentences developing a central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a paragraph is a sentence or a group of sentences that supports one central, unified idea. Paragraphs add one idea at a time to your broader argument.
+   </p>
+
+   <p class="e2">
+    A paragraph is a series of related sentences developing a central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a paragraph is a sentence or a group of sentences that supports one central, unified idea. Paragraphs add one idea at a time to your broader argument.
+   </p> -->
+
+   <!-- <!Psedua class>
+   <a class="my-link" href="#">Shanawaj</a>
+   <a href="#"> hossain</a>
+
+   <!Psedua focus>
+   <input type="text" placeholder="Enter your name"> </Input><br>
+
+
+   <table>
+
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Roll</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        <tr>
+            <td>101</td>
+            <td>Shanawaj</td>
+            <td>52</td>
+
+        </tr>
+
+       <tr>
+            <td>102</td>
+            <td>saju</td>
+            <td>53</td>
+            
+        </tr>
+
+        <tr>
+            <td>103</td>
+            <td>sohrab</td>
+            <td>54</td>
+            
+        </tr>
+      
+    </tbody>
+   </table> -->
+
+   <!-- <!Psedua element>
+
+   <p>Topic sentences are similar to mini thesis statements. Like a thesis statement, a topic sentence has a specific main point. Whereas the thesis is the main point of the essay, the topic sentence is the main point of the paragraph. Like the thesis statement, a topic sentence has a unifying function. But a thesis statement or topic sentence alone doesn’t guarantee unity. An essay is unified if all the paragraphs relate to the thesis, whereas a paragraph is unified if all the sentences relate to the topic sentence. Note: Not all paragraphs need topic sentences. In particular, opening and closing paragraphs, which serve different functions from body paragraphs, generally don’t have topic sentences.</p> -->
+
+   <!-- <!Psedua more class>
+   <div class="demo">
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, voluptate.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, voluptate.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, voluptate.</p>
+
+   </div>
+
+   <ul>
+    <li>Home 1</li>
+    <li>Home 2</li>
+    <li>Home 3</li>
+    <li>Home 4</li>
+    <li>Home 5</li>
+   </ul> -->
+
+   <!-- <div class="demo">
+    <p> <span class="first-letter-style">L</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, voluptate.</p>
+    <p>Norem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, voluptate.</p>
+    <p>Oorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, voluptate.</p>
+ 
+   </div> -->
+
+   <!-- <!Specifity calculation>
+  <h1 class="backgroud" id="background" style="background-color: blue;">Shanawaj hossain saju</h1> -->
+
+ <!-- <div  id="grad">
+
+  </div> -->
+
+  <!-- <!float in css>
+  <div id="section1">
+    <h1>Heading 1</h1>
+  </div>
+
+  <div id="section2">
+
+    <h1>Heading 2</h1>
+  </div>
+
+  <div id="clearDiv"></div>
+  <div id="section3">
+    <p>Dolor at sea ut voluptua sanctus amet justo. Stet duo sea et takimata. Erat sed labore ut et amet elitr et labore. Gubergren sit gubergren consetetur sed sanctus et dolor elitr amet. Et est et sanctus rebum eos accusam elitr consetetur. Eos justo erat vero kasd aliquyam aliquyam et voluptua, voluptua elitr no diam sed, vero ipsum sed dolore diam duo est aliquyam. Ipsum rebum dolor et ea sed accusam diam, eirmod ipsum est no dolor magna sed ut et sit. Sed lorem lorem ut accusam sed est est eirmod amet, amet voluptua lorem et sit clita sed aliquyam duo..</p>
+  </div> -->
+
+  <!-- <!nav-menu design>
+  <div id="nav-menu">
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contract</a></li>
+    </ul>
+
+  </div> -->
+
+  <!-- <!box-sizing>
+  <div class="div1">
+    <p>Justo vero erat ea gubergren lorem rebum sit gubergren, lorem sit nonumy sanctus duo lorem tempor takimata ipsum tempor. Dolore takimata dolor sed ut elitr amet aliquyam duo. Duo nonumy aliquyam accusam tempor ipsum sea clita sanctus sit. Tempor sea sit amet eirmod stet est eos nonumy, lorem rebum vero et sed no sea. Lorem voluptua kasd no voluptua et labore. Amet no dolor amet voluptua sadipscing nonumy. Sea accusam est ipsum amet stet no consetetur nonumy. Erat ut sea et sit et vero duo invidunt eirmod. Eirmod tempor sed eos est ut ipsum dolores elitr, sit vero no accusam dolores ipsum sea amet ut, justo ea elitr ipsum sit vero tempor sea. Et sanctus takimata sit sed magna rebum vero, magna vero diam lorem elitr sit sit labore sed justo. Ea stet est ipsum et eos. Est ipsum et vero labore sea eirmod, at sanctus sit eirmod no eirmod lorem no, diam invidunt amet amet labore sadipscing gubergren lorem, eos lorem diam et dolores. Amet lorem lorem et justo amet, justo voluptua tempor invidunt nonumy et aliquyam voluptua, lorem no lorem dolore sit, stet dolor tempor ipsum stet, sit accusam et dolor magna et est amet voluptua. Sit gubergren.</p>
+  </div>
+
+  <div class="div2">
+    <p>There sought to each earthly was lowly dwelt hight more. Made they childe goodly loathed. That to had where once disporting call start, thou things lines or below harold, parting drop forgot aye sorrow coffined, but that sing were deem but glare run. Eros of a what his spoiled these found mothernot, deem oft one her though from ah knew loathed seraphs. Childe go for did flee none of, that and harold yea save of heart childe their his, in feels him were her. If sore to awake worse are riot. One her or in none the childe might that,.</p>
+  </div> -->
+
+  <!-- <!Opacity>
+  <img src="me01.png" alt="Shanawaj"> -->
+
+
+
+
+</body>
+</html>
