@@ -440,7 +440,7 @@ p::first-letter{
     }
 </style> -->
 
-<link rel="stylesheet" href="style.css">
+<!-- <link rel="stylesheet" href="style.css"> -->
 
 <!-- <!gradient in css>
 <style>
@@ -535,6 +535,213 @@ p::first-letter{
     }
 
 </style> -->
+
+<!-- <!Css position property>
+<style>
+.navbar-dev{
+    border: solid 3px green;
+    padding: 5px;
+    position: fixed;
+    top: 20px;
+}
+
+.div1{
+    border: solid 3px green;
+    padding: 5px;
+    position: static;
+    top: 20px;
+}
+
+.div2{
+    border: solid 3px red;
+    padding: 5px;
+    position: relative;
+    top: 20px; left: 50px;
+}
+
+.div3{
+    border: solid 3px yellow;
+    padding: 5px;
+    height: 300px;
+    position: relative;
+    top: 20px; 
+}
+
+.div4{
+    border: solid 3px skyblue;
+    padding: 5px;
+    position: absolute;
+    left: 100px;
+}
+
+
+</style> -->
+
+<!-- <!overflow in css>
+<style>
+    div{
+        width: 200px;
+        height: 150px;
+        background-color: green;
+        border: red solid 1px;
+        padding: 10px;
+        overflow: scroll;
+    }
+</style> -->
+
+<!-- <!Tooltip in css>
+<style>
+
+.tooltip{
+
+    position: relative;
+
+}
+
+    .tooltip .tooltip-text{
+        visibility: hidden;
+        width: 200px;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        z-index: 1;
+    }
+
+    .tooltip:hover .tooltip-text{
+        visibility: visible;
+    }
+
+</style> -->
+
+<!-- <!z-index in css>
+<style>
+   
+   :root{
+    --primary-color : green;
+    --secondary-color : blue;
+
+   }
+
+    #div1{
+        width: 250px;
+        height: 250px;
+        background: pink;
+        background-color: var(--primary-color);
+    }
+    #div2{
+        width: 250px;
+        height: 250px;
+        background-color:var(--secondary-color);
+    }
+
+    @media screen and (max-width: 600px ){
+
+        :root{
+    --primary-color : black;
+    --secondary-color : yellow;
+
+   }
+        
+    }
+
+
+</style> -->
+
+<!-- <!flexbox layout design>
+<style>
+
+    .flex-container{
+        background-color: brown;
+        display: flex;
+        /* flex-wrap: wrap;
+        flex-direction: row; */
+        flex-flow: wrap row;
+        justify-content: space-between;
+        height: 300px;
+        align-items: flex-end;
+        
+    }
+
+    .flex-container > div{
+
+        font-size: 25px;
+        background-color: cyan;
+        margin: 10px;
+        padding: 20px;
+        color: wheat;
+
+    }
+</style> -->
+
+<!-- <!shadow in css>
+<style>
+
+    h1{
+        text-shadow: 3px 5px 5px red;
+    }
+    div{
+        width: 200px;
+        color: white;
+        background-color: black;
+        border: 3px solid green;
+        box-shadow: 30px 15px yellow;
+    
+        }
+</style> -->
+
+
+<!Card-design in css>
+<style>
+
+    .card-containers{
+        background-color: chartreuse;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        display: flex;
+    }
+
+    .container{
+        box-sizing: border-box;     
+        width: 300px;
+        box-shadow: 1px 2px 4px black;
+    }
+
+    .container .cardImg{
+        width: 100%;
+
+    }
+
+    .container .card-body{
+        
+        padding: 5px;
+        background-color: cornflowerblue;
+
+    }
+
+    .container .card-title{
+        color: white;
+        text-align: center;
+        font-size: 25px;
+
+    }
+
+    .card-body .card-des{
+        text-align: justify;
+        color: white;
+    }
+
+    .container:hover{
+        box-shadow: 12px 10px 6px white;
+    }
+   
+
+
+</style>
 
 </head>
 <body>
@@ -736,6 +943,187 @@ p::first-letter{
   <!-- <!Opacity>
   <img src="me01.png" alt="Shanawaj"> -->
 
+  <!-- <!Css position property>
+  <div class="navbar-dev">
+
+    <a href="#">Home</a>
+  </div>
+
+  <br>
+
+  <div class="div1">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rem atque saepe corrupti vitae dolorem vel quo, eveniet nihil amet laborum porro sapiente magnam odio alias, a qui nostrum quisquam pariatur molestiae, quod neque! Aliquam quibusdam accusamus natus sequi fugiat veniam nemo. Provident ipsum ratione rerum error illum voluptate numquam.</p>
+  </div>
+
+  <br>
+
+  <div class="div2">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rem atque saepe corrupti vitae dolorem vel quo, eveniet nihil amet laborum porro sapiente magnam odio alias, a qui nostrum quisquam pariatur molestiae, quod neque! Aliquam quibusdam accusamus natus sequi fugiat veniam nemo. Provident ipsum ratione rerum error illum voluptate numquam.</p>
+  </div>
+
+  <br>
+
+  <div class="div3">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rem atque saepe corrupti vitae dolorem vel quo, eveniet nihil amet laborum porro sapiente magnam odio alias, a qui nostrum quisquam pariatur molestiae, quod neque! Aliquam quibusdam accusamus natus sequi fugiat veniam nemo. Provident ipsum ratione rerum error illum voluptate numquam.</p>
+
+    <div class="div4">
+        HI Bangladesh
+    </div>
+</div>
+
+  <p>Et accusam sed sit justo rebum kasd diam, dolor aliquyam ipsum lorem sea, justo dolore est dolores et ut aliquyam stet rebum sit, rebum invidunt kasd amet dolor lorem amet et. Ipsum et sadipscing lorem sadipscing justo magna dolor dolore sit, clita et et sadipscing justo et, diam ut amet gubergren duo erat. Et sit ipsum diam erat kasd diam. Eos est nonumy labore amet aliquyam eirmod sea, invidunt lorem accusam sed labore sadipscing dolore, ut labore takimata at erat stet aliquyam sanctus dolores amet, duo sed clita erat sed dolore, ipsum ipsum dolores ipsum et no et, magna duo sadipscing et ut. Nonumy rebum amet amet eos diam no duo, erat voluptua takimata ipsum consetetur lorem invidunt ipsum dolor, sed no eirmod clita takimata takimata est sed kasd ipsum, clita erat dolore eirmod amet. Ut sea clita invidunt sed at ipsum sanctus magna diam. Elitr amet lorem takimata ipsum est. Diam amet voluptua eirmod voluptua sea aliquyam clita, ipsum dolor labore et rebum kasd dolore, justo ut sed amet dolore nonumy et, dolores sed tempor sanctus nonumy stet stet. Dolor duo at dolor elitr sit ea et. Sed dolor et amet eos at dolore sit. Nonumy eos dolores erat consetetur, ea ipsum voluptua invidunt diam, gubergren ea accusam dolor justo. Sanctus at eos accusam sea. At vero et sadipscing amet rebum et, stet et et lorem takimata ea dolor sed, ipsum kasd dolores elitr diam et et et, voluptua et clita ut consetetur, takimata sanctus sed takimata clita amet justo takimata elitr, sadipscing ea no est gubergren kasd ipsum nonumy, stet dolor et tempor magna sed labore duo nonumy. Justo et ipsum tempor dolore, accusam voluptua invidunt dolores ipsum ipsum erat kasd invidunt diam, labore et erat et diam et erat sit aliquyam, lorem sea et et et et. Rebum consetetur vero dolor stet lorem et dolor, eirmod tempor sed voluptua eirmod eos amet labore, sanctus ea sed no ipsum et. Est et dolore amet eos, sanctus elitr diam diam est, diam labore aliquyam accusam invidunt labore ut lorem est consetetur, takimata eirmod justo sanctus sit dolores at diam lorem, labore vero eirmod eirmod et lorem lorem. Eos sit sea et invidunt dolores magna at. Labore et lorem tempor takimata dolore dolore voluptua lorem, et dolor rebum stet aliquyam erat sit et justo. Consetetur invidunt sea diam dolor lorem. Rebum gubergren et dolor amet sanctus tempor takimata sanctus lorem, ipsum et lorem justo et, ipsum rebum dolore dolor ut. Amet diam aliquyam lorem lorem diam kasd tempor, accusam diam consetetur vero et sed ipsum dolor. Eirmod vero aliquyam sea aliquyam kasd justo ea. Lorem tempor sit sed dolor lorem rebum, tempor sea elitr est voluptua dolor, amet vero clita lorem tempor duo. Rebum sea lorem kasd gubergren magna accusam voluptua et. Diam tempor ipsum diam gubergren vero justo sadipscing sadipscing nonumy, sed vero et ea dolore, sit magna dolores sed voluptua. Est rebum sed dolores et rebum eos, et eirmod est lorem sed et dolor, dolore dolor sit sadipscing rebum no voluptua sit. No amet kasd amet kasd labore amet et. Tempor dolor stet et et vero. Justo ipsum takimata lorem sit amet takimata. Aliquyam magna ipsum kasd nonumy. Elitr lorem takimata nonumy eos sit. Sed sanctus dolore rebum tempor vero vero at, takimata labore lorem ut rebum clita et gubergren et amet, lorem nonumy dolor diam sit duo elitr aliquyam dolor. Stet dolor kasd no eos ipsum diam et est lorem, erat vero magna no sea voluptua lorem. Et stet dolore sanctus eirmod ipsum stet sea. Tempor dolor ea at nonumy et et et kasd, elitr sanctus kasd stet eirmod lorem. Labore aliquyam elitr dolores et dolor est, et vero eirmod et diam stet voluptua. Lorem erat takimata erat takimata. Dolores et diam et clita at ipsum. Justo sit at dolore at sadipscing elitr dolor lorem. Et dolore et no dolores labore sadipscing sed dolore. Sanctus sit dolores ut dolore ut, kasd rebum accusam vero dolores kasd diam. Stet eos consetetur ipsum clita labore aliquyam vero dolore invidunt. Dolore dolores nonumy sit no eirmod takimata voluptua dolor. Takimata ut dolore lorem et clita clita lorem ipsum labore. Sit magna justo aliquyam diam takimata ea sit. Stet sanctus ea.</p> -->
+
+  <!-- <!overflow in css>
+  <div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat hic quae ut quia aperiam. Sequi quam maiores, magni magnam architecto vero totam, doloremque inventore temporibus aliquid optio dolorum repudiandae ea voluptates, velit sint deserunt fugit et mollitia maxime pariatur ad ipsa molestias sed. Perspiciatis illum cum vero cupiditate nesciunt quas itaque maiores placeat sit totam ab aspernatur dolor, at voluptatibus repellat consectetur iusto corrupti molestias magni. Assumenda nulla quia molestias placeat provident fugit voluptate id dolore incidunt, atque possimus autem tenetur vel nesciunt reiciendis aspernatur libero officiis consectetur, nostrum doloribus ut corrupti quidem ipsum accusamus! Cum ea velit quaerat laudantium delectus tempore incidunt doloribus dignissimos quibusdam libero rem facilis omnis, qui ullam! Nobis quam atque dolorum tenetur quos omnis ab quasi eos cumque, numquam fuga modi odio temporibus, voluptatum facere assumenda sunt. Quidem placeat, reprehenderit commodi quas harum ad. Non corporis excepturi dolor molestiae, ipsam dignissimos ipsum enim fuga numquam temporibus at nobis. Adipisci aliquid officia libero ducimus cupiditate, iste quaerat repellat reprehenderit tempora autem laudantium consequuntur sed dolorem amet provident, ex ipsum repellendus accusantium in? Maiores fugit doloremque excepturi quos autem accusamus maxime placeat harum, amet explicabo sint. At vero dolorum vitae autem nam ipsum, distinctio rem ducimus possimus aut adipisci amet sequi veniam ex dolor, deleniti inventore eligendi est! Obcaecati, dicta fugit! Veniam, iste commodi facilis necessitatibus quo eaque rem numquam accusantium cupiditate. Earum doloremque maxime in aspernatur soluta qui voluptatum fuga enim esse cum quas atque mollitia veritatis minima perferendis, vero neque hic alias laudantium! Quia, ratione sed aliquam odio dolores, deserunt exercitationem nostrum suscipit nisi mollitia harum libero nesciunt aperiam, alias distinctio. Ab molestias cupiditate iure esse obcaecati alias, dolorem earum soluta delectus in pariatur ducimus rerum minus asperiores repudiandae, cumque repellat mollitia quam perferendis dignissimos. Voluptatibus porro adipisci dignissimos officia repellendus. Aperiam, sapiente placeat? Perspiciatis!
+  </div> -->
+
+  <!-- <!Tooltip in css>
+
+  <a href="#" class="tooltip">
+     FaceBook
+     <span class="tooltip-text">FaceBook is a Social media</span>
+    </a> -->
+
+    <!-- <!z-index in css>
+      <div id="div1"></div>
+      <div id="div2"></div> -->
+
+      <!-- <!flexbox layout design>
+      <div class="flex-container">
+
+        <div class="div1">
+
+            Div 1
+        </div>
+
+        <div class="div2">
+            Div 2
+        </div>
+
+        <div class="div3">
+            Div3
+        </div>
+
+        <div class="div4">
+            Div4
+        </div>
+
+        <div class="div5">
+
+            Div 5
+        </div>
+
+        <div class="div6">
+            Div 6
+        </div>
+
+        <div class="div7">
+            Div7
+        </div>
+
+        <div class="div8">
+            Div8
+        </div>
+
+      </div> -->
+
+      <!-- <h1>
+        Bangladesh
+      </h1>
+
+      <div>
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt itaque minus, officia accusamus natus voluptatum fugiat laboriosam dolore iure a beatae. Voluptate illum voluptatum quos ipsa iusto quod voluptatem in architecto alias? Earum sed cumque sunt iste. Quae asperiores ratione perspiciatis beatae quia, nobis recusandae fuga. Nihil nesciunt ratione accusamus?
+      </div> -->
+
+
+<!Card-design in css>
+
+
+<div class="card-containers">
+
+    <div class="container">
+   
+        <div class="card">
+     
+         <img class="cardImg" src="laptop.jpg" alt="">
+     
+     
+         <div class="card-body">
+     
+             <div class="card-title">
+                 Hp Laptop
+             </div>
+     
+             <div class="card-des">
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores saepe accusantium recusandae pariatur autem mollitia repellendus laborum velit nihil quis! Voluptate at illum id fugiat aliquid magnam, error ratione obcaecati?</p>
+     
+             </div>
+     
+     
+         </div>
+     
+     
+        </div>
+     
+     
+     </div>
+
+     <div class="container">
+   
+        <div class="card">
+     
+         <img class="cardImg" src="laptop.jpg" alt="">
+     
+     
+         <div class="card-body">
+     
+             <div class="card-title">
+                 Hp Laptop
+             </div>
+     
+             <div class="card-des">
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores saepe accusantium recusandae pariatur autem mollitia repellendus laborum velit nihil quis! Voluptate at illum id fugiat aliquid magnam, error ratione obcaecati?</p>
+     
+             </div>
+     
+     
+         </div>
+     
+     
+        </div>
+     
+     
+     </div> 
+
+     <div class="container">
+   
+   <div class="card">
+
+    <img class="cardImg" src="laptop.jpg" alt="">
+
+
+    <div class="card-body">
+
+        <div class="card-title">
+            Hp Laptop
+        </div>
+
+        <div class="card-des">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores saepe accusantium recusandae pariatur autem mollitia repellendus laborum velit nihil quis! Voluptate at illum id fugiat aliquid magnam, error ratione obcaecati?</p>
+
+        </div>
+
+
+    </div>
+
+
+   </div>
+
+
+</div>
+</div>
 
 
 
