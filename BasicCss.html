@@ -693,8 +693,7 @@ p::first-letter{
         }
 </style> -->
 
-
-<!Card-design in css>
+<!-- <!Card-design in css>
 <style>
 
     .card-containers{
@@ -741,6 +740,306 @@ p::first-letter{
    
 
 
+</style> -->
+
+<!-- <!girdLayout in css>
+
+<style>
+
+.grid{
+    display: grid;
+    grid-template-columns:100px auto auto auto;
+    /* grid-template-rows: 120px; */
+    /* grid-column-gap: 10px;
+    grid-row-gap: 10px; */
+    /* grid-gap: 50px 10px; */
+    background-color: black;
+
+}
+.grid>div{
+
+    border: 1px solid black;
+    background-color: burlywood;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+.grid .item1{
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    grid-column: 1/span 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.item2{grid-area: header;}
+.item3{grid-area: menu1;}
+.item4{grid-area: main;}
+.item5{grid-area: aside;}
+.item6{grid-area: footer;}
+
+.grid2{
+    display: grid;
+    /* grid-template-columns: auto auto auto; */
+    grid-template-areas: 
+    'header header header header header header'
+    'menu1 main main main aside aside'
+    'menu1 footer footer footer footer footer'
+    ;
+}
+
+
+
+.grid2 > div {
+    
+    border: 1px solid black;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    text-align: center;
+
+}
+
+
+.grid3{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+}
+
+.grid3 > div {
+    
+    border: 1px solid black;
+    background-color: blueviolet;
+    color: white;
+    padding: 5px;
+    text-align: center;
+
+}
+
+
+/* .grid2 .item2{
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+} */
+
+
+</style> -->
+
+<!-- <!grid layout responsibe design>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        height: 100vh;
+        display: grid;
+        grid-template-rows: min-content auto min-content; 
+        grid-template-areas:
+        'h'
+        'm'
+        'm'
+        'm'
+        'f';
+    }
+
+    header{
+        grid-area: h;
+        background-color: pink;
+        width: 100%;
+        border: solid;
+
+    }
+    
+    main{
+        background-color: chocolate;
+        grid-area: m;
+        width: 100%;
+        height: 100%;
+
+
+    }
+
+    article{
+
+        display: grid;
+        grid-template-areas: 
+        's1 a1'
+        's2 a2'
+        's3 .'
+        ;
+        height: 100%;
+
+    }
+
+    #sec1{grid-area: s1;}
+    #sec2{grid-area: s2;}
+    #sec3{grid-area: s3;}
+    #aside1{grid-area: a1;}
+    #aside2{grid-area: a2;}
+    #nav1{grid-area: n1;}
+    #nav2{grid-area: n2;}
+
+    section{
+
+        border: solid;
+
+    }
+    aside{
+
+        background-color: coral;
+        border: solid 1px black
+
+    }
+
+    footer{
+
+        grid-area: f;
+        width: 100%;
+        display: grid;
+        grid-template-areas: 'n1 n2';
+        border: solid;
+        background-color: blueviolet;
+    }
+
+
+    @media screen and(max-width:600px) {
+        
+
+        article{
+
+grid-template-areas: 
+'s1'
+'a1'
+'s2'
+'a2'
+'s3 .'
+;
+height: 100%;
+
+}
+        
+        footer{
+            grid-template-areas: 
+            'n1 '
+            'n2';
+
+        }
+
+    }
+
+</style> -->
+
+<!-- <!center element in css>
+<style>
+    .main{
+        width: 80%;
+        margin: 0 auto;
+        background-color: blue;
+        height: 400px;
+
+        position: relative;
+
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+    }
+
+    .desc{
+        background-color: black;
+        color: white;
+        width: 300px;
+        height: 200px;
+
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+  
+</style> -->
+
+
+<!-- <!icon button>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.social-media{
+
+    background-color: gray;
+    padding: 50px 20px;
+    text-align: center;
+    
+}
+.btn{
+    border: none;
+    padding: 10px 20px;
+    font-size: 2rem;
+    border-radius: 5px;
+
+}
+.btn:hover{
+    background-color: skyblue;
+}
+</style> -->
+
+
+<!dropdown menu in css>
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    text-align: center;
+    width: 100%;
+    background-color: gray;
+    padding: 1% 7%;
+   
+    
+}
+
+.navbar a{
+    color: white;
+    font-size: 1.5rem;
+    margin: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.dropdown-container{
+    display: inline;
+    position: relative;
+    
+}
+
+.dropdown-content{
+
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    background-color: gray;
+    text-align: left;
+    width: 100px;
+    display: none;
+}
+
+.dropdown-container:hover .dropdown-content{
+
+    display: block;
+}
+
+.dropdown-content a{
+
+    display: block;
+
+}
 </style>
 
 </head>
@@ -985,11 +1284,11 @@ p::first-letter{
      <span class="tooltip-text">FaceBook is a Social media</span>
     </a> -->
 
-    <!-- <!z-index in css>
+<!-- <!z-index in css>
       <div id="div1"></div>
       <div id="div2"></div> -->
 
-      <!-- <!flexbox layout design>
+ <!-- <!flexbox layout design>
       <div class="flex-container">
 
         <div class="div1">
@@ -1028,7 +1327,7 @@ p::first-letter{
 
       </div> -->
 
-      <!-- <h1>
+ <!-- <h1>
         Bangladesh
       </h1>
 
@@ -1037,9 +1336,7 @@ p::first-letter{
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt itaque minus, officia accusamus natus voluptatum fugiat laboriosam dolore iure a beatae. Voluptate illum voluptatum quos ipsa iusto quod voluptatem in architecto alias? Earum sed cumque sunt iste. Quae asperiores ratione perspiciatis beatae quia, nobis recusandae fuga. Nihil nesciunt ratione accusamus?
       </div> -->
 
-
-<!Card-design in css>
-
+<!-- <!Card-design in css>
 
 <div class="card-containers">
 
@@ -1123,8 +1420,122 @@ p::first-letter{
 
 
 </div>
+</div> -->
+
+<!-- <!Grid layout in css>
+<div class="grid">
+
+    <div class="item1">1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+    <div>13</div>
+    <div>14</div>
+    <div>15</div>
+    <div>16</div>
+ 
+
 </div>
 
+<div class="grid2">
+    <div class="item2">Header</div>
+    <div class="item3">Main</div>
+    <div class="item4">Main</div>
+    <div class="item5">Aside</div>
+    <div class="item6">Footer</div>
+</div>
+
+
+<br>
+<div class="grid3">
+
+    <div class="item7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nulla odit molestiae voluptatibus fugiat iure accusantium illo obcaecati exercitationem! Delectus inventore recusandae provident vero voluptates quis debitis tempora quae nisi.</div>
+    <div class="item8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nulla odit molestiae voluptatibus fugiat iure accusantium illo obcaecati exercitationem! Delectus inventore recusandae provident vero voluptates quis debitis tempora quae nisi.</div>
+    <div class="item9">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nulla odit molestiae voluptatibus fugiat iure accusantium illo obcaecati exercitationem! Delectus inventore recusandae provident vero voluptates quis debitis tempora quae nisi.</div>
+    <div class="item10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nulla odit molestiae voluptatibus fugiat iure accusantium illo obcaecati exercitationem! Delectus inventore recusandae provident vero voluptates quis debitis tempora quae nisi.</div>
+
+</div> -->
+
+<!-- <!grid-layout responsibe design>
+
+<head>
+    <nav>Header Nav</nav>
+</head>
+
+
+<main>
+
+    <article>
+
+        <section id="sec1">
+            SEction1
+        </section>
+
+        <section id="sec2">
+            SEction2
+        </section>
+
+      <section id="sec3">
+            SEction3
+        </section>
+
+
+        <aside id="aside1">Asisde 1</aside>
+        <aside id="aside2">Asisde 2</aside>
+
+
+    </article>
+
+</main>
+
+<footer>
+    <nav id="nav1">Nav1</nav>
+    <nav id="nav2">Nav2</nav>
+</footer> -->
+
+<!-- 
+<!how to center element>
+
+<div class="main">
+
+    <div class="desc">
+        <h3>Rangpur</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, at quae cum harum temporibus assumenda itaque reiciendis officiis quisquam error. Voluptatem voluptate harum optio velit cupiditate architecto, voluptates reiciendis deserunt quam non porro ad dolorem inventore consectetur eligendi, ab aliquam excepturi tenetur alias, vero vel accusantium dolore eaque. Ipsum, ad!</p>
+    </div>
+
+</div> -->
+
+<!-- <!icon button in css>
+<div class="social-media">
+    <button class="btn" onclick="window.open('https://saju45.netlify.app/')" class="btn request-callback" ><i class="fa fa-facebook" style="color:	#4267B2;" aria-hidden="true"></i>
+    </button>
+</div> -->
+
+
+<div class="navbar">
+
+    <a href="#">Home</a>
+    <a href="#">Shanawaj</a>
+    <div class="dropdown-container">
+        <a href="#">Contract me</a>
+        <div class="dropdown-content">
+
+            <a href="#">Github</a>
+            <a href="#">FaceBook</a>
+            <a href="#">Profile</a>
+        </div>
+      
+    </div>
+    <a href="#">About</a>
+</div>
 
 
 </body>
