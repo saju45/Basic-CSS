@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <style>
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+        .header{
+            background-color:darkcyan;
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+        .header h1{
+            margin-top: 10px;
+            margin-left: 10px;
+            position: relative;
+            color: white;
+        }
+    
+        .nav-menu{
+            text-align: center;
+            display: flex;
+        }
+
+        .nav-menu ul{
+            display: flex;
+            list-style-type: none;
+        }
+
+        .header li{
+            color: white;
+            margin: 15px;
+        }
+
+        .header img{
+
+            height: 80px;
+            width: 100px;
+            padding-left: 50px;
+        }
+
+        .weather-img{
+            display: flex;
+            justify-content: right;
+            margin-right: 50px;
+            margin-top: 20px;
+        }
+
+        .weather-img img{
+
+            width: 80px;
+            height: 80px;
+            transition: transform 2s;
+            /* animation-name: img;
+            animation-duration: 3;
+            animation-fill-mode: forwards; */
+
+        }
+
+     
+        .weather-img :hover{
+            transform: rotate(360deg);
+        }
+
+        .description >pre{
+            font-size: 28px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .description >p{
+            text-align: center;
+            margin-left: 50px;
+            margin-right: 50px;
+            font-size: 16px;
+            color: grey;
+        }
+
+        .weather2>img{
+
+            width: 80px;
+            height: 80px;
+            margin-left: 50px;
+            margin-top: 30px;
+            transition: transform 2s;
+
+        }
+
+        .weather2>img:hover{
+            transform: rotate(360deg);
+        }
+
+
+        .tutorial-list{
+
+            text-align: center;
+            background-color: gray;
+            padding: 20px 10px;
+
+     }
+
+     .card-container{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+
+     }
+
+
+     .card >img{
+        width: 220px;
+        height: 100px;
+        border-radius: 5px;
+     }
+
+     .about-me{
+
+        text-align: center;
+        background-color: cadetblue;
+        color: white;
+     }
+
+
+     .my-details{
+        margin-right: 30px;
+        margin-left: 20px;
+        margin-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        
+     }
+
+     .my-img{
+
+        width: 40%;
+
+     }
+
+     .my-description{
+        text-align: left;
+        width: 60%;
+
+     }
+
+     .my-img>img{
+
+        height: 100px;
+        width: 100px;
+        border: solid 1px black;
+        border-radius: 50%;
+
+     }
+
+
+
+    
+
+    #bg-button {
+
+        margin-top: 20px;
+        padding: 10px;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+     }
+
+     #bg-button:hover{
+
+        background-color: red;
+        box-shadow: 2px 3px;
+     }
+
+     .skill-details{
+
+        text-align: center;
+        color: white;
+
+        margin-left: 50px;
+        margin-right: 50px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+
+     }
+
+     .card-working{
+
+        height: auto;
+        width: auto;
+        margin: 10px;
+        background-color: gray;
+
+     }
+
+     .card-working>img{
+        margin-top: 10px;
+        height: 60px;
+        width: 60px;
+        border: 1px solid black;
+        border-radius: 50%;
+     }
+
+     .div2{
+        margin-top: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color:darkcyan;
+        color: white;
+        text-align: center;
+     }
+     
+   
+    .card-skill{
+        height: auto;
+        width: 320px;
+        margin: 10px;
+        padding-right: 10px;
+        background-color: gray;
+
+    }
+
+
+
+
+
+    .card-skill  ul li{
+
+        list-style-type: none;
+        margin: 50px 0;
+        font-weight: bolder;
+        text-transform: uppercase;
+        position: relative;
+    }
+
+    .card-skill li::before{
+
+        content: '';
+        position: absolute;
+        top: calc(100% + 5px);
+
+        background-color: rgb(170,167,173);
+        width: 100%;
+        height: 25px;
+        border-radius: 1000px;
+    }
+
+    .card-skill li::after{
+
+        content: '';
+        position: absolute;
+        top: calc(100% + 5px);
+        left: 0;
+        
+
+        background-color:blue;
+        width: 0;
+        height: 25px;
+        border-radius: 1000px;
+
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-delay: 2s;
+        animation-iteration-count: 3;
+        animation-direction: forward;
+
+    }
+
+
+
+
+    .card-skill li.c::after{
+
+        animation-name: c;
+    }
+
+    .card-skill li.ca::after{
+        animation-name: ca;
+    }
+
+    .card-skill li.java::after{
+        animation-name: java;
+    }
+
+    .card-skill li.kotlin::after{
+        animation-name: kotlin;
+    }
+
+    .card-skill li.js::after{
+        animation-name: js;
+    }
+
+
+
+    @keyframes c{
+    
+        to{
+            width: 90%;
+        }
+    }
+
+    @keyframes ca{
+        
+        to{
+            width: 90%;
+            background-color: orange;
+        }
+    }
+
+
+    @keyframes java{
+        
+        to{
+            width: 90%;
+            background-color: orange;
+        }
+    }
+
+    @keyframes kotlin{
+        
+        to{
+            width: 90%;
+            background-color: orange;
+        }
+    }
+
+    @keyframes js{
+        
+        to{
+            width: 90%;
+            background-color: orange;
+        }
+    }
+
+   
+
+    .card-skill>img{
+        margin-top: 10px;
+        height: 60px;
+        width: 60px;
+        border: 1px solid black;
+        border-radius: 50%;
+     }
+
+
+    .skill-details li{
+    
+        text-align: left;
+        position: relative;
+        margin: 10px 0;
+        color: black;
+    }
+
+    .skill-details ol{
+        text-align: left;
+        color: black;
+    }
+
+
+
+    .div3{
+
+        background-color: darkturquoise;
+        color: white;
+        display: grid;
+        text-align: center;
+        grid-template-columns:  auto auto auto;
+    }
+
+    .div-achievement{
+
+        width: 300px;
+    }
+
+    .div-achievement li{
+        text-align: left;
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .div-contract{
+        width: 300px;
+        box-sizing: border-box;
+    }
+
+
+
+    .div-contract input[type="text"],input[type="email"]{
+
+        padding: 10px;
+        margin: 10px;
+        width: 100%;
+        text-align: center;
+        border-radius: 10px;
+        
+    }
+
+    .div-contract input[type="submit"],input[type="reset"]{
+        padding: 10px 30px;
+        margin: 10px;
+        background-color: palevioletred;
+        color: white;
+        border-radius: 10px;
+    }
+
+    .div-contract textarea{
+
+        width: 100%;
+        margin: 10px;
+        text-align: center;
+        
+    }
+
+    .more-contract{
+        width: 300px;
+    }
+
+    .icon-container{
+
+        display: inline-block;
+        grid-template-columns: auto auto;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 15px;
+
+    }
+
+
+    .youtube{
+    border: none;
+    padding: 2px 8px;
+    font-size: 2rem;
+    border-radius: 50%;
+    color: red;
+    margin: 10px;
+
+    }
+
+    .facebook{
+
+    border: none;
+    padding: 2px 8px;
+    font-size: 2rem;
+    border-radius: 50%;
+    color:  #898F9C;
+    margin: 10px;
+    
+    }
+
+    .github{
+
+     border: none;
+    padding: 2px 8px;
+    font-size: 2rem;
+    border-radius: 50%;
+    color:  #898F9C;
+    margin: 10px;
+    
+    }
+
+    .linkedin{
+
+        border: none;
+    padding: 2px 8px;
+    font-size: 2rem;
+    border-radius: 50%;
+    color: darkblue;
+    margin: 10px;
+    
+    }
+
+    .skype{
+        border: none;
+    padding: 2px 8px;
+    font-size: 2rem;
+    border-radius: 50%;
+    color: blue;
+    margin: 10px;
+    
+    }
+
+    .whatsapp{
+        border: none;
+    padding: 2px 8px;
+    font-size: 2rem;
+    border-radius: 50%;
+    color: green;
+    margin: 10px;
+    
+    }
+
+    pre{
+        font-family: 'Dancing Script', cursive;
+    }
+ 
+    @media screen and (max-width:768px) 
+    {
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        
+        .header{
+            text-align: center;
+            display: block;
+            width: 100%;
+
+        }
+
+        .nav-menu ul{
+            text-align: center;
+            display: block;
+            width: 100%;
+
+        }
+
+        .header .nav-menu ul li{
+            background-color:gray;
+            text-align: center; 
+            padding: 10px;
+            margin: 10px;
+            width: 100%;
+        }
+        
+    }
+
+
+    </style>
+
+</head>
+<body>
+
+
+    <div class="header">
+
+        <img src="/me01.png" alt="">
+
+        <h1>Shanawaj hossain</h1>
+
+      
+        <div class="nav-menu">
+            <ul>
+                <li>Home</li>
+                <li>Profile</li>
+                <li>About</li>
+                <li>Contract</li>
+                <li>Skill</li>
+            </ul>
+        </div>
+      
+
+    </div>
+
+    
+    <div class="weather-img">
+        <img src="/cloudy.png" alt="">
+    </div>
+
+
+    <div class="description">
+
+        <pre>
+
+            I am an Android developer 
+              &
+               Web Designer
+        </pre>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vitae magni distinctio asperiores sapiente, numquam ex placeat eius accusantium obcaecati! Dolorum, mollitia molestias corrupti quibusdam nemo velit ducimus quo officiis?</p>
+
+    </div>
+
+    <div class="weather2">
+        <img src="/cloudy.png" alt="">
+
+    </div>
+    <div class="tutorial-list">
+
+        <h1>Tutotrial list</h1>
+        <p>................</p>
+
+
+        <div class="card-container">
+
+            <div class="card">
+                <img src="/programming.jpg" alt="">
+            </div>
+            <div class="card">
+                <img src="/programming.jpg" alt="">
+            </div>
+            <div class="card">
+                <img src="/programming.jpg" alt="">
+            </div>
+             <div class="card">
+                <img src="/programming.jpg" alt="">
+            </div>
+
+        </div>
+
+
+        <div class="card-container">
+
+            <div class="card">
+                <img src="/programming.jpg" alt="">
+            </div>
+            <div class="card">
+                <img src="/programming.jpg" alt="">
+            </div>
+            <div class="card">
+                <img src="/programming.jpg" alt="">
+            </div>
+             <div class="card">
+                <img src="/programming.jpg" alt="">
+            </div>
+
+        </div>
+
+        <div class="card-container">
+
+            <div class="card">
+                <img src="/programming.jpg" alt="">
+            </div>
+            <div class="card">
+                <img src="/programming.jpg" alt="">
+            </div>
+            <div class="card">
+                <img src="/programming.jpg" alt="">
+            </div>
+             <div class="card">
+                <img src="/programming.jpg" alt="">
+            </div>
+
+        </div>
+
+         <div class="card-container">
+
+            <div class="card">
+                <img src="/programming.jpg" alt="">
+            </div>
+            <div class="card">
+                <img src="/programming.jpg" alt="">
+            </div>
+            <div class="card">
+                <img src="/programming.jpg" alt="">
+            </div>
+             <div class="card">
+                <img src="/programming.jpg" alt="">
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="about-me">
+
+        <h1>
+            About Me
+        </h1>
+
+        <p>..........</p>
+
+        <div class="my-details">
+
+            <div class="my-img">
+                <img src="/me01.png" alt="">
+            </div>
+
+            <div class="my-description">
+
+                <p>I like to call my self profession android developer and web full stack developer</p>
+            
+                <br> 
+                <br>           
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem pariatur placeat ipsa ipsum necessitatibus suscipit maiores natus voluptates debitis. Dolore quidem sint quia aut quo necessitatibus aliquam doloribus sit dignissimos.</p>
+                <hr>
+                <br>
+                <p>Name:Shanawaj hossain saju</p>
+                <br>
+                <hr>
+
+                <br>
+                <p>Email Address: shanawajsaju@gmail.com</p>
+                <br>
+                <hr>
+
+                <br>
+                <p>PHone : 01773734512</p>
+                <br>
+                <hr>
+
+
+                <button id="bg-button">
+                    Download Cv
+                </button>
+
+
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+
+
+    <div class="skill-details">
+
+
+        <div class="card-working">
+
+            <img src="/programming.jpg" alt="">
+
+            <div class="div2">
+                <h2>Working Exprience</h2>
+            </div>
+     
+
+            <ol>
+                <li>Lecture and Information  & communication Technology</li>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis ullam possimus quia dolore corporis, dolorum corrupti, rem ipsum ducimus magni commodi labore! Quo facere dolore ratione atque sed temporibus dignissimos!</p>
+                <br>
+                <hr>
+                <li>Lecturer of Csc Department</li>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum et facilis deserunt provident iusto at suscipit autem? Rem, dicta tenetur.</p>
+                <br>
+                <hr>
+                <li>Dammy Text</li>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi tempora pariatur nihil est! Doloribus, laborum ratione aperiam quidem dolores saepe!</p>
+                <br>
+                <hr>
+            </ol>
+
+        </div>
+
+    
+        <div class="card-working">
+
+            <img src="/programming.jpg" alt="">
+
+            <div class="div2">
+                <h2>Working Exprience</h2>
+            </div>
+     
+
+            <ol>
+                <li>Lecture and Information  & communication Technology</li>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis ullam possimus quia dolore corporis, dolorum corrupti, rem ipsum ducimus magni commodi labore! Quo facere dolore ratione atque sed temporibus dignissimos!</p>
+                <br>
+                <hr>
+                <li>Lecturer of Csc Department</li>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum et facilis deserunt provident iusto at suscipit autem? Rem, dicta tenetur.</p>
+                <br>
+                <hr>
+                <li>Dammy Text</li>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi tempora pariatur nihil est! Doloribus, laborum ratione aperiam quidem dolores saepe!</p>
+                <br>
+                <hr>
+            </ol>
+
+        </div>
+
+        <div class="card-skill">
+
+            <img src="/programming.jpg" alt="">
+
+            <div class="div2">
+                <h2>Skills</h2>
+            </div>
+
+
+            <ul>
+                <li class="c">C</li>
+                <li class="ca">C++</li>
+                <li class="java">Java</li>
+                <li class="kotlin">Kotlin</li>
+                <li class="js">JavaScript</li>
+                <li class="html">Html</li>
+                <li class="css">Css</li>
+                <li class="bootstrap">Bootstrap</li>
+                <li class="jquary">JQuary</li>
+            </ul>
+
+     
+        </div>
+
+    </div>
+
+
+
+    <div class="div3">
+
+        <div class="div-achievement">
+
+            <h2>
+                Achievement
+            </h2>
+            <p>.......................</p>
+
+
+            <ol>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, nobis!</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, nobis!</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, nobis!</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, nobis!</li>
+
+            </ol>
+
+        </div>
+
+        <div class="div-contract">
+
+
+            <h2>Contract Me</h2>
+            <p>....................</p>
+
+
+            <input type="text" placeholder="your Name">
+            <input type="email" placeholder="Your email">
+
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+
+            <input type="submit" value="Send">
+
+            <input type="reset" value="Reset">
+
+        </div>
+
+
+        <div class="more-contract">
+
+            <h2>
+                More way to contract
+            </h2>
+            <p>.........................</p>
+
+            <div class="icon-container">
+             
+                <button class="youtube"> <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                </button>
+
+                <button class="facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i>
+                </button>
+
+                <button class="github"><i class="fa fa-github" aria-hidden="true"></i>
+                </button>
+
+
+                <button class="linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </button>
+
+                <button class="skype"><i class="fa fa-skype" aria-hidden="true"></i>
+                </button>
+
+
+
+                <button class="whatsapp"><i class="fa fa-whatsapp" aria-hidden="true"></i>
+                </button>
+
+            </div>
+           
+
+
+        </div>
+
+    </div>
+
+
+</body>
+</html>

@@ -969,8 +969,8 @@ height: 100%;
 <!-- <!icon button>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-.social-media{
 
+    .social-media{
     background-color: gray;
     padding: 50px 20px;
     text-align: center;
@@ -989,7 +989,7 @@ height: 100%;
 </style> -->
 
 
-<!dropdown menu in css>
+<!-- <!dropdown menu in css>
 <style>
 
 *{
@@ -1040,12 +1040,611 @@ height: 100%;
     display: block;
 
 }
+</style> -->
+
+
+<!responsibe web design>
+
+<!-- <link rel="stylesheet" @media="screen and(max-width:600px)" href="mobile.css">
+<link rel="stylesheet" @media="screen and(min-width:992px)" href="laptop.css"> -->
+
+<!-- <!Responsibe Navigation design>
+
+<style>
+    *{
+        box-sizing: border-box;
+
+    }
+
+    .menu{
+        display: flex;
+        justify-content: flex-end;
+        background-color: cadetblue;
+        
+    }
+
+    div a{
+        padding: 20px;
+        color: white;
+        text-decoration: none;
+    }
+
+    div a:hover{
+
+        background-color: gray;
+    }
+
+    @media screen and (max-width:600px) {
+
+    
+        .menu{
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        .menu a{
+            background-color: indigo;
+            margin: 10px 0;
+            text-align: center;
+            border-radius: 10px;
+        }
+        
+    }
+
+/*     
+    @media screen and (max-width:700px) {
+        body{
+            background-color: brown;
+        }
+        h1{
+            color: white;
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        body{
+            background-color: skyblue;
+        }
+        h1{
+            color: white;
+        }
+    } */
+
+</style> -->
+
+<!-- <!Responsibe colum design>
+
+<style>
+
+    *{
+        box-sizing: border-box;
+     
+    }
+
+    .row{
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .colum{
+        flex: 25%;
+        padding: 10px;
+    }
+
+/* .colum{
+    float: left;
+    width: 25%;
+    padding: 10px;
+} */
+
+@media screen and (max-width:992px) {
+
+    /* .colum{
+
+        float: left;
+        width: 50%;
+    }
+     */
+
+     .colum{
+        flex: 50%;
+      
+    }
+
+
+    }
+
+@media screen and (max-width:600px) {
+
+    /* .colum{
+        
+        width: 100%;
+    } */
+    
+
+    .row{
+        flex-direction: column;
+    }
+
+}
+
+</style> -->
+
+<!-- <!Responsibe grid layout>
+
+<style>
+*{
+    box-sizing: border-box;
+}
+ .header{
+        padding: 1% 5px;
+        background-color: orange;
+        color: white;
+        text-align: center;
+}
+
+.row{
+    width: 100%;
+
+}
+
+
+.row .nav-menu{
+    padding: 1% 5%;
+    background-color: green;    
+}
+
+.nav-menu a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+.main{
+    background-color: red;
+}
+.aside{
+
+    background-color:aquamarine;
+    text-align: center;
+    padding: 5px;
+
+
+}
+
+[class*="col-"]{
+        width: 100%;
+    }
+    
+ 
+   [class*="col-"]{
+    float: left;
+    padding: 10px;
+   }
+
+   .row::after{
+    content: '';
+    clear: both;
+    display: table;
+   }
+  @media screen and (min-width:600px) {
+
+/* for mobile */
+.col-s-1{width: 8.33%;}
+.col-s-2{width: 16.66%;}
+.col-s-3{width: 25%;}
+.col-s-4{width:33.33%;}
+.col-s-5{width: 41.66%;}
+.col-s-6{width: 50%;}
+.col-s-7{width: 58.33%;}
+.col-s-8{width: 66.66%;}
+.col-s-9{width: 75%;}
+.col-s-10{width: 83.33%;}
+.col-s-11{width: 91.66;}
+.col-s-12{width: 100%;}
+}
+
+   @media screen and (min-width:768px) {
+
+    /* for destop */
+   .col-1{width: 8.33%;}
+   .col-2{width: 16.66%;}
+   .col-3{width: 25%;}
+   .col-4{width:33.33%;}
+   .col-5{width: 41.66%;}
+   .col-6{width: 50%;}
+   .col-7{width: 58.33%;}
+   .col-8{width: 66.66%;}
+   .col-9{width: 75%;}
+   .col-10{width: 83.33%;}
+   .col-11{width: 91.66;}
+   .col-12{width: 100%;}
+    
+   }
+
+   .footer h2{
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+   }
+
+</style> -->
+
+<!-- <!transform property>
+
+<style>
+
+#div1{
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    margin: 0 auto;
+    margin-top: 200px;
+    border-radius: 10px;
+    transition: 3s;
+
+}
+
+#div1 h2{
+    margin: 0 auto;
+    color: white;
+    
+}
+
+#div1:hover{
+
+    transform: scale(1.5);
+    transform: rotate(720deg);
+    transform: skew(360deg);
+    transform: translate(250px,250px);
+
+    transform: scale(1.5) rotate(360deg);
+
+
+}
+
+
+</style> -->
+
+<!-- <!Animationin in css>
+<style>
+    img{
+        max-width: 200px;
+        height: 200px;
+        border: solid gray 2px;
+
+        display: block;
+        margin: 0 auto;
+        margin-top: 200px;
+        border-radius: 50%;
+        position: relative;
+        animation-name: img-anim;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+    }
+
+    /* img:hover{
+
+        animation-name: img-anim;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+    } */
+
+
+    @keyframes img-anim {
+
+
+        0%{
+            top: 0;
+            left: 0;
+        }
+        50%{
+
+            top: 50px;
+            left: 50px;
+            opacity: 0.5;
+
+        }
+        100%{
+            top: 0px;
+            left: 0px;
+
+        }
+
+        /* 0%{
+            border-color: orange;
+        }
+        50%{
+
+            border-color: blue;
+        }
+        100%{
+    
+            border-color: red;
+        }
+         */
+    }
+</style> -->
+
+<!-- <!Animationin transition  and transform>
+
+<style>
+
+.main{
+    background-color: tomato;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    /* transition-property: width;
+    transition-duration: 2s;
+    transition-delay: 1s; */
+    transition: width 2s,transform 2s;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    transition: font-size 2s;
+}
+
+h1:hover{
+
+    font-size: 3rem;
+}
+
+.main:hover{
+
+    width: 400px;
+    transform: rotate(360deg);
+}
+
+</style> -->
+
+<!-- <!Animationin Progressbar in css>
+<style>
+
+    *{
+        box-sizing: border-box;
+    }
+
+    .skill-container{
+        width: 500px;
+        padding: 20px;
+        background-color: gray;
+    }
+
+    .skill-container li{
+        list-style-type: none;
+        margin: 50px 0;
+        font-weight: bolder;
+        text-transform: uppercase;
+        position: relative;
+    }
+
+    .skill-container li::before{
+        content: '';
+        position: absolute;
+        top: calc(100% + 5px);
+
+        background-color: rgb(170,167,173);
+        width: 100%;
+        height: 25px;
+        border-radius: 1000px;
+    }
+
+    .skill-container li::after{
+        content: '';
+        position: absolute;
+        top: calc(100% + 5px);
+        left: 0;
+
+        background-color: rgb(249,249,250);
+        width: 0;
+        height: 25px;
+        border-radius: 1000px;
+
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-delay: 2s;
+        animation-iteration-count: 3;
+        animation-direction: forward;
+
+    }
+
+  
+    .skill-container li.java::after{
+
+        animation-name: java;
+    }
+
+    @keyframes java{
+
+        to{
+            width: 90%;
+            background-color: orange;
+        }
+    }
+
+    .skill-container li.kotlin::after{
+        animation-name: kotlin;
+    }
+
+    @keyframes kotlin{
+
+        to{
+            width: 80%;
+            background-color: blue;
+        }
+    }
+
+</style> -->
+
+<!-- <!Table design in css>
+<style>
+
+    table{
+        border: 2px solid black;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td,th{
+        border: 2px solid black;
+        padding: 5px;
+        text-align: center;
+    }
+
+    th{
+        background-color: green;
+        color: white;
+        height: 40px;
+        vertical-align:middle;
+    }
+
+    tr:nth-child(odd){
+        background-color: red;
+        color: white;
+    }
+
+
+    tr:hover{
+        background-color: orange;
+        color: white;
+    }
+
+    
+
+</style> -->
+
+<!Form design in css>
+<!-- <style>
+
+
+*{
+    box-sizing: border-box;
+    margin-right: 20px;
+}
+
+input[type=text]{
+
+      box-sizing: border-box;
+       width: 100%;
+       padding: 10px 20px;
+       font-size: 1rem;
+       margin: 20px 0;
+
+       border: 2px solid salmon;
+       border-radius: 10px;
+    
+    }
+
+    #search{
+        background-image: url("search.png");
+        background-repeat: no-repeat;
+        background-position: 8px 10px;
+        background-size: 30px;
+        font-size: 1rem;
+        padding: 15px 40px;
+        width: 150px;
+        transition: width 0.3s ease-in-out;
+    }
+
+    #search:focus{
+        width: 100%;
+    }
+
+   
+
+</style> -->
+
+<!-- <style>
+    
+    textarea{
+        resize: none;
+        width: 50%;
+        padding: 20px;
+        border: solid 3px gray;
+        border-radius: 10px;
+    }
+
+    input[type="button"],input[type="reset"]{
+
+        width: 100px;
+        padding: 10px;
+        background-color: green;
+        color: white;
+        border-radius: 10px;
+
+    }
+
+    #subjects{
+
+        width: 25%;
+        padding: 20px;
+        background-color: green;
+        color: white;
+        font-size: 25px;
+        border-radius: 10px;
+    }
+
+</style> -->
+
+<!list style in css>
+
+<link rel="stylesheet" 
+href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
+integrity="sha384- 
+ B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" 
+  crossorigin="anonymous">
+
+<style>
+
+    .course-list{
+        background-color: gray;
+        width: 50%;
+        padding: 10px;
+        color: white;
+    }
+
+    .course-list ul{
+        /* list-style-type: circle;
+        list-style-position: inside;
+        list-style-image: url("tick.png"); */
+        /* list-style: url("tick.png") inside circle ; */
+
+        list-style-type: none;
+    }
+
+    #list1 li{
+
+        padding: 10px;
+        /* list-style-type:lower-greek; */
+    
+    }
+
+    .course-list li::before{
+        content: '\f058';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: bold;
+
+        display: inline-block;
+        margin: 10px 5px;
+    }
+
+    
 </style>
 
 </head>
 <body>
     
-    <!-- <!class and id in css>
+<!-- <!class and id in css>
     <p class="heading-style  center1" >I am form Bangladesh</p>
     <h1>I am form Bangladesh</h1>
 
@@ -1063,7 +1662,7 @@ height: 100%;
 
 <!-- <h1>this is heading tag 1</h1> -->
 
-    <!-- <div id="section1" >
+ <!-- <div id="section1" >
         <h1 class="decoration" >Bangladesh</h1>
         <p class="wordSpacing">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like</p>
 
@@ -1075,7 +1674,7 @@ height: 100%;
         <p> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
     </div> --> 
 
-    <!-- <!emoji styling>
+<!-- <!emoji styling>
     <p> I <span>🤍</span>  Bangladesh</p> -->
 
 <!-- <!margin and paddin>
@@ -1095,7 +1694,7 @@ height: 100%;
    <h2>Bangladesh</h2>
    <h3>Bangladesh</h3> -->
 
-   <!-- <!box model>
+<!-- <!box model>
    <h1>This is Bangladesh</h1>
 
    <p>This is a paragraph</p>
@@ -1519,7 +2118,7 @@ height: 100%;
     </button>
 </div> -->
 
-
+<!-- <!dropdown menu in css>
 <div class="navbar">
 
     <a href="#">Home</a>
@@ -1527,7 +2126,6 @@ height: 100%;
     <div class="dropdown-container">
         <a href="#">Contract me</a>
         <div class="dropdown-content">
-
             <a href="#">Github</a>
             <a href="#">FaceBook</a>
             <a href="#">Profile</a>
@@ -1536,7 +2134,237 @@ height: 100%;
     </div>
     <a href="#">About</a>
 </div>
+ -->
 
+
+ <!Responsibe web design>
+ <!-- <h1>Bangladesh</h1>
+ <h2>Responsibe web design</h2>
+
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque incidunt explicabo adipisci beatae inventore voluptatem. Dignissimos aspernatur recusandae illum sunt.</p> -->
+
+ <!-- <!responsibe navigation desgin>
+ <div class="menu">
+
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Profile</a>
+    <a href="#">Contract</a>
+ </div> -->
+
+<!-- <!Responsibe colum design>
+
+<div class="row">
+
+
+    <div class="colum">
+        <h1>Html</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis repellat at consequatur recusandae excepturi aspernatur dolorum, vel voluptatibus eligendi maiores?</p>
+    </div>
+
+    <div class="colum">
+        <h1>CSS</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis repellat at consequatur recusandae excepturi aspernatur dolorum, vel voluptatibus eligendi maiores?</p>
+    </div>
+
+    <div class="colum">
+        <h1>JS</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis repellat at consequatur recusandae excepturi aspernatur dolorum, vel voluptatibus eligendi maiores?</p>
+    </div>
+
+    <div class="colum">
+        <h1>Bootstrap</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis repellat at consequatur recusandae excepturi aspernatur dolorum, vel voluptatibus eligendi maiores?</p>
+    </div>
+
+</div> -->
+
+<!-- <!Responsibe Grid Layout>
+
+<div class="header">
+    <h1>This is grid layout</h1>
+</div>
+
+<div class="row">
+
+    <div class="nav-menu col-s-3 col-2">
+
+        <a href="#">Home</a>
+        <a href="#">Profile</a>
+        <a href="#">About</a>
+    </div>
+
+    <div class="main col-s-9 col-7">
+
+    <h1> I am android developer</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, quae.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quisquam, aperiam corrupti iste recusandae fugiat asperiores corporis dolore mollitia consequatur.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam fuga a pariatur unde reprehenderit quos placeat, ut optio veritatis, necessitatibus commodi vero tenetur exercitationem accusamus voluptas soluta reiciendis. Cupiditate, in.</p>
+</div>
+
+    <div class="aside col-s-12 col-3">
+        <h1>What I love</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel inventore incidunt earum atque voluptas fugit eius dolor, delectus laborum nostrum.</p>
+        <h2>What i do</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus aut cupiditate vitae ipsam a officiis velit error recusandae dolorum, dolores aliquid atque aperiam? Ea quis adipisci veritatis eius sequi non!
+
+        </p>
+
+        <h2>what i don’t love</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae animi atque eaque ratione dolor placeat molestiae voluptatem exercitationem magnam deleniti!</p>
+    </div>
+
+</div>
+
+
+<div class="footer">
+
+    <h2>Create by Shanawaj</h2>
+
+</div> -->
+
+<!-- <!transform property>
+
+<div id="div1">
+
+    <h2>Bangladesh</h2>
+</div> -->
+
+<!-- <!Animationin css>
+
+<img src="me01.png" alt=""> -->
+
+<!-- <!Animationin transition an transform>
+<div class="main">
+    <h1>Bangladesh</h1>
+</div> -->
+
+<!-- <!Animationin Progressbar in css>
+
+<div class="skill-container">
+
+    <ul>
+        <li class="java">Java</li>
+        <li class="kotlin">Kotlin</li>
+        <li  class="android">Android</li>
+        <li class="html">Html</li>
+        <li class="css">Css</li>
+        <li class="js">JS</li>
+        <li class="bootstrap">Bootstrap</li>
+    </ul>
+</div> -->
+
+<!-- <!Table design in css>
+
+<table>
+    <caption>Student Information</caption>
+
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>GPA</th>
+        <th>Phone</th>
+        <th>Bio</th>
+    </tr>
+
+    <tr>
+
+        <td>101</td>
+        <td>Saju</td>
+        <td>3.61</td>
+        <td>01773734512</td>
+        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quidem illo nisi aperiam ipsum cum sapiente aliquam, vero modi itaque!</td>
+    </tr>
+
+    <tr>
+
+        <td>102</td>
+        <td>Shanawaj</td>
+        <td>3.61</td>
+        <td>01773734512</td>
+        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quidem illo nisi aperiam ipsum cum sapiente aliquam, vero modi itaque!</td>
+    </tr>
+    <tr>
+
+        <td>103</td>
+        <td>Sohrab</td>
+        <td>3.61</td>
+        <td>01773734512</td>
+        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quidem illo nisi aperiam ipsum cum sapiente aliquam, vero modi itaque!</td>
+    </tr>
+    <tr>
+
+        <td>104</td>
+        <td>partho</td>
+        <td>3.61</td>
+        <td>01773734512</td>
+        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quidem illo nisi aperiam ipsum cum sapiente aliquam, vero modi itaque!</td>
+    </tr>
+
+</table> -->
+
+<!-- <!Form Design >
+
+<form action="">
+
+    <input type="text" name="search" id="search" placeholder="search">
+
+    <br>
+    <label for="fname">First name</label>
+    <input type="text" name="fname" id="fname" >
+
+    <label for="lname">First name</label>
+    <input type="text" name="lname" id="lname" >
+
+    <label for="pass">Password</label>
+    <input type="password" name="pass" id="pass" >
+
+
+    <textarea name="name" id="name" cols="30" rows="10">Write your commnet here</textarea>
+   
+    <br>
+    <input type="button" value="Submit">
+    <input type="reset" value="Reset">
+
+    <br>
+    <br>
+
+    <select name="subject-name" id="subjects">
+
+        <option value="c">C programming</option>
+        <option value="j">Java</option>
+        <option value="k">Kotlin</option>
+        <option value="js">JavaScript</option>
+
+    </select>
+</form> -->
+
+
+<div class="course-list">
+    <ul >
+        <li>C</li>
+        <li>c++</li>
+        <li>Java</li>
+        <li>Kotlin</li>
+        <li>JavaScript</li>
+        <li>Html</li>
+    </ul>
+
+</div>
+
+
+
+
+
+<ul >
+    <li>C</li>
+    <li>c++</li>
+    <li>Java</li>
+    <li>Kotlin</li>
+    <li>JavaScript</li>
+    <li>Html</li>
+</ul>
 
 </body>
 </html>
